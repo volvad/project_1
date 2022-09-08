@@ -21,3 +21,6 @@ body {
         flex: 0 0 180px;
         padding: 0 10px;
     }
+    .headers {
+        text-shadow: 5px 2px 4px gray;
+    }
