@@ -1,0 +1,20 @@
+/* css for index.html */
+
+/* global settings */
+* {
+    background: linear-gradient(200deg, #17b1ea, #0d4c70);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 10px 2px 10px #000, -2px 2px 1px #000;
+    }
+
+/* settings div */
+div {
+    text-align: center;
+}
