@@ -11,10 +11,27 @@
     -o-background-size: cover;
     background-size: cover;
     color: #fff;
-    text-shadow: 10px 2px 10px #000, -2px 2px 1px #000;
+    text-shadow: -3px 2px 3px #000, -2px 2px 1px #000;
     }
 
 /* settings div */
 div {
+    width: 1500px;
+    height: 100px;
     text-align: center;
 }
+
+#transform {
+    background: none;
+    transform: skew(1deg) scale(2,2);
+    color: #fff;
+    /*animation: anim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;*/
+}
+/*@keyframes anim {
+    from {text-shadow: -8px 2px 3px #000, -2px 2px 2px #000;}
+    to {text-shadow: 7px 2px 4px #000, -2px 2px 2px #000;}
+}*/
