@@ -1,7 +1,7 @@
 /* "css/style.css" for "index.html" */
 
 
-/********** Global settings **********/
+/********** global settings **********/
 body {
     /*** Background ***/
     background: linear-gradient(200deg, #17b1ea, #0d4c70);
@@ -20,7 +20,7 @@ body {
 }
 
 
-/********** Table settings **********/
+/********** table settings **********/
 table {
     /*** Background ***/
     /* background-color: #667788; */
