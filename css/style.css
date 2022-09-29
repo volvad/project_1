@@ -1,15 +1,16 @@
 /* "css/style.css" for "index.html" */
 
+
 /********** Global settings **********/
-* {
+body {
     /*** Background ***/
     background: linear-gradient(200deg, #17b1ea, #0d4c70);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
     background-size: cover;
 
     /*** Text ***/
@@ -18,29 +19,72 @@
     text-shadow: -3px 2px 3px #000, -2px 2px 1px #000;
 }
 
+
 /********** Table settings **********/
 table {
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    font-size: 14px;
+    margin: 20px 20px;
+
+    /*** Background ***/
+    background-color: #0f9bec;
+
+    /*** Border ***/
     border-radius: 10px;
-    border-spacing: 0;
+    border-spacing: 0px;
+    /* border-style: solid; */
+    /* border-color: white; */
+
+    /*** Text ***/
     text-align: center;
     color: white;
+
+    /*** Font ***/
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 14px;
 }
 
 th {
+    /*** Border table header ***/
     padding: 10px 20px;
-}
-
-th,
-td {
     border-style: solid;
-    border-width: 0 1px 1px 0;
-    border-color: white;
+    /* Borders top, right, bottom */
+    border-width: 1px 1px 1px 0px;
+
 }
 
+th:first-child {
+    /*** Border first header***/
+    border-top-left-radius: 10px;
+    /* Border left */
+    border-left-width: 1px;
+}
 
+th:last-child {
+    /*** Border last header***/
+    border-top-right-radius: 10px;
+}
 
+td {
+    /*** Border Table Date ***/
+    padding: 10px 20px;
+    border-style: solid;
+    /* Borders right, bottom */
+    border-width: 0px 1px 1px 0px;
+}
+
+td:first-child {
+    /*** Border left first Table Data***/
+    border-left-width: 1px;
+}
+
+tr:last-child td:first-child {
+    /*** Border last left Table Data***/
+    border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+    /*** Border last right Table Data***/
+    border-radius: 0 0 10px 0;
+}
 
 
 /*----------- Settings div -----------*/
@@ -87,4 +131,3 @@ p{
 /*@keyframes anim {
     from {text-shadow: -8px 2px 3px #000, -2px 2px 2px #000;}
     to {text-shadow: 7px 2px 4px #000, -2px 2px 2px #000;}*/
-}
