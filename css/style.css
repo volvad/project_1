@@ -1,28 +1,47 @@
 /* "css/style.css" for "index.html" */
 
-/*---------- Global settings -----------*/
+/********** Global settings **********/
 * {
-    /*----- Font -----*/
-    /* font-family: 'Times New Roman', Times, serif; */
-    /* font-size: 11pt;
-    font-weight: bold; */
-    color: #fff;
-
-    /*----- Background -----*/
+    /*** Background ***/
     background: linear-gradient(200deg, #17b1ea, #0d4c70);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover;
 
-    /*----- Text -----*/
-    text-align: center;
-    text-transform: uppercase;
+    /*** Text ***/
+    /* color: white; */
+    /* text-transform: uppercase; */
     text-shadow: -3px 2px 3px #000, -2px 2px 1px #000;
 }
+
+/********** Table settings **********/
+table {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    color: white;
+}
+
+th {
+    padding: 10px 20px;
+}
+
+th,
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+
+
+
 
 /*----------- Settings div -----------*/
 /* div { */
