@@ -22,16 +22,14 @@ body {
 
 /********** Table settings **********/
 table {
-    margin: 20px 20px;
-
     /*** Background ***/
-    background-color: #0f9bec;
+    /* background-color: #667788; */
 
     /*** Border ***/
-    border-radius: 10px;
+    border-radius: 20px;
     border-spacing: 0px;
-    /* border-style: solid; */
-    /* border-color: white; */
+    border-style: solid;
+    border-color: #aaa;
 
     /*** Text ***/
     text-align: center;
@@ -48,19 +46,19 @@ th {
     border-style: solid;
     /* Borders top, right, bottom */
     border-width: 1px 1px 1px 0px;
-
+    background-color: #1f5d81;
 }
 
 th:first-child {
     /*** Border first header***/
-    border-top-left-radius: 10px;
+    border-top-left-radius: 20px;
     /* Border left */
     border-left-width: 1px;
 }
 
 th:last-child {
     /*** Border last header***/
-    border-top-right-radius: 10px;
+    border-top-right-radius: 20px;
 }
 
 td {
@@ -78,28 +76,40 @@ td:first-child {
 
 tr:last-child td:first-child {
     /*** Border last left Table Data***/
-    border-radius: 0 0 0 10px;
+    border-radius: 0px 0px 0px 20px;
 }
 
 tr:last-child td:last-child {
     /*** Border last right Table Data***/
-    border-radius: 0 0 10px 0;
+    border-radius: 0px 0px 20px 0px;
+}
+
+#selectTd td:hover {
+    /*** Select Table Data ***/
+    background-color: #999;
+    font-size: 13px;
 }
 
 
-/*----------- Settings div -----------*/
-/* div { */
-
-/*----- Indent -----*/
-/* background: none;
-    margin: auto;
-    margin-top: 100px;
-    padding: auto; */
-
-/*----- Vertical center -----*/
-/* display: flex;
+/********** div settings **********/
+div {
+    /*** Vertical center ***/
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
+
+    /*** Indent ***/
+    background: none;
+    padding: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+
+
+
+
 
 /*----- Size -----*/
 /* width: 110px;
