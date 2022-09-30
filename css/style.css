@@ -14,30 +14,25 @@ body {
     background-size: cover;
 
     /*** Text ***/
-    /* color: white; */
-    /* text-transform: uppercase; */
+    color: white;
     text-shadow: -3px 2px 3px #000, -2px 2px 1px #000;
+
+    /*** Font ***/
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 16px;
 }
 
 
 /********** table settings **********/
 table {
-    /*** Background ***/
-    /* background-color: #667788; */
-
     /*** Border ***/
-    border-radius: 20px;
+    border-radius: 22px;
     border-spacing: 0px;
     border-style: solid;
     border-color: #aaa;
 
     /*** Text ***/
     text-align: center;
-    color: white;
-
-    /*** Font ***/
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    font-size: 14px;
 }
 
 th {
@@ -46,7 +41,7 @@ th {
     border-style: solid;
     /* Borders top, right, bottom */
     border-width: 1px 1px 1px 0px;
-    background-color: #1f5d81;
+    background-color: #1f5f81;
 }
 
 th:first-child {
@@ -88,11 +83,22 @@ tr:last-child td:last-child {
     /*** Select Table Data ***/
     background-color: #999;
     font-size: 13px;
+    cursor: pointer;
 }
 
 
 /********** div settings **********/
 div {
+    /*** Size ***/
+    width: 330px;
+    height: auto;
+    /* overflow: auto; */
+
+    /*** Border ***/
+    border-radius: 20px;
+    border-spacing: 0px;
+    border-style: none;
+
     /*** Vertical center ***/
     display: flex;
     align-items: center;
@@ -102,42 +108,5 @@ div {
     background: none;
     padding: auto;
     margin: auto;
-    margin-top: 50px;
+    margin-top: auto;
 }
-
-
-
-
-
-
-
-/*----- Size -----*/
-/* width: 110px;
-    height: 50px;
-    overflow: auto; */
-
-/*----- Text -----*/
-/* text-align: center;
-    transform: skew(1deg) scale(3,3);
-}
-p{
-    background: none; */
-/*------------ Settings p ------------*/
-/*  width: 400px;
-    height: 100px;
-    padding-left: auto;
-    padding-right: auto;
-    text-align: center;
-    background: none;
-    transform: skew(1deg) scale(4,4);
-    color: #fff;
-    /*animation: anim;
-    animation-duration: 5s;
-    animation-timing-function: ease-in;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;*/
-
-/*------------ Animation ------------*/
-/*@keyframes anim {
-    from {text-shadow: -8px 2px 3px #000, -2px 2px 2px #000;}
-    to {text-shadow: 7px 2px 4px #000, -2px 2px 2px #000;}*/
