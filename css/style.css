@@ -23,90 +23,44 @@ body {
 }
 
 
-/********** table settings **********/
-table {
-    /*** Border ***/
-    border-radius: 22px;
-    border-spacing: 0px;
-    border-style: solid;
-    border-color: #aaa;
-
-    /*** Text ***/
-    text-align: center;
-}
-
-th {
-    /*** Border table header ***/
-    padding: 10px 20px;
-    border-style: solid;
-    /* Borders top, right, bottom */
-    border-width: 1px 1px 1px 0px;
-    background-color: #1f5f81;
-}
-
-th:first-child {
-    /*** Border first header***/
-    border-top-left-radius: 20px;
-    /* Border left */
-    border-left-width: 1px;
-}
-
-th:last-child {
-    /*** Border last header***/
-    border-top-right-radius: 20px;
-}
-
-td {
-    /*** Border Table Date ***/
-    padding: 10px 20px;
-    border-style: solid;
-    /* Borders right, bottom */
-    border-width: 0px 1px 1px 0px;
-}
-
-td:first-child {
-    /*** Border left first Table Data***/
-    border-left-width: 1px;
-}
-
-tr:last-child td:first-child {
-    /*** Border last left Table Data***/
-    border-radius: 0px 0px 0px 20px;
-}
-
-tr:last-child td:last-child {
-    /*** Border last right Table Data***/
-    border-radius: 0px 0px 20px 0px;
-}
-
-#selectTd td:hover {
-    /*** Select Table Data ***/
-    background-color: #999;
-    font-size: 13px;
-    cursor: pointer;
+.container {
+    /* style container div */
+    border: 2px solid #0d4c70;
+    background: linear-gradient(200deg, #17b1ea, #0d4c70);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 
-/********** div settings **********/
-div {
-    /*** Size ***/
-    width: 330px;
-    height: auto;
-    /* overflow: auto; */
+.container img {
+    /* style avatar images */
+    float: left;
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
 
-    /*** Border ***/
-    border-radius: 20px;
-    border-spacing: 0px;
-    border-style: none;
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-    /*** Vertical center ***/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.id {
+    /* style class id */
+    float: right;
+}
 
-    /*** Indent ***/
-    background: none;
-    padding: auto;
-    margin: auto;
-    margin-top: auto;
+.message {
+    color: #fff;
+}
+
+.date {
+    /* style class date */
+    float: right;
 }
